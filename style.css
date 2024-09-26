@@ -1,0 +1,169 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	font-family: gilroy;
+}
+body,
+html {
+	width: 100%;
+	height: 100%;
+}
+
+main {
+	width: 100vw;
+	height: 100vh;
+	background-image: url("bg.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+
+.container {
+	width: 380px;
+	background-color: rgba(256, 256, 256, 0.2);
+	padding: 20px;
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	backdrop-filter: blur(30px);
+}
+
+.main-heading {
+	font-size: 2.8rem;
+	font-weight: 600;
+	color: #dbfdff;
+	text-transform: uppercase;
+	position: relative;
+	text-align: center;
+}
+.main-heading::after {
+	content: "";
+	width: 50%;
+	height: 5px;
+	background-color: #c65073;
+	position: absolute;
+	bottom: -10px;
+	right: 25%;
+}
+
+
+.watch-container {
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 18px 10px;
+	border-radius: 5px;
+	margin: 35px 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* gap: 10px; */
+	width: 100%;
+	position: relative;
+	border-left: 5px solid #c65073;
+	border-right: 5px solid #c65073;
+}
+
+.watch-container div {
+	font-size: 1.8rem;
+	width: 35px;
+	height: 35px;
+	text-align: center;
+	padding: 18px;
+	margin: 0px 2px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn-container {
+	display: flex;
+	/* gap: 30px; */
+	align-items: center;
+	width: 100%;
+	justify-content: space-between;
+	margin: 20px 0px;
+}
+
+.btn-container .btn {
+	border: 3px solid transparent;
+	outline: none;
+	/* background-color: #dbfdff; */
+	background-color: #c65073;
+	color: white;
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	padding: 10px 8px;
+	border-radius: 5px;
+	transition: ease all 0.8s;
+	font-weight: bold;
+}
+
+.btn:hover {
+	background-color: transparent;
+	border: 3px solid white;
+	color: #fff;
+	cursor: pointer;
+}
+
+.btn:active {
+	scale: 1.89;
+}
+
+h2 {
+	font-size: 1rem;
+	margin-top: 13px;
+}
+
+#hours {
+	position: relative;
+	text-transform: uppercase;
+}
+#min {
+	position: relative;
+	text-transform: uppercase;
+}
+#sec {
+	position: relative;
+	text-transform: uppercase;
+}
+#mili-sec {
+	position: relative;
+	text-transform: uppercase;
+}
+
+#hours::after {
+	content: "Hours";
+	position: absolute;
+	bottom: -15px;
+	left: 0;
+	font-size: 12px;
+}
+#min::after {
+	content: "Min";
+	position: absolute;
+	bottom: -15px;
+	left: -20;
+	font-size: 12px;
+}
+#sec::after {
+	content: "Sec";
+	position: absolute;
+	bottom: -15px;
+	left: -20;
+	font-size: 12px;
+}
+#mili-sec::after {
+	content: "MiliSec";
+	position: absolute;
+	bottom: -15px;
+	left: 0px;
+	font-size: 12px;
+}
